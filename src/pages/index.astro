@@ -1,0 +1,19 @@
+---
+import Counter from "../views/counter/Counter.vue";
+import Footer from "../layout/Footer.svelte";
+---
+
+<header>
+	<title>Vue Counter Page</title>
+</header>
+
+<main class="flex flex-col justify-center items-center mt-20">
+	<Counter client:visible />
+
+	<a href="/react" title="Go the the react page" class="text-blue-500 mt-10">Go to react page</a>
+</main>
+
+
+<footer class="absolute bottom-0 w-full">
+	<Footer />
+</footer>

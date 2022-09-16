@@ -1,0 +1,18 @@
+---
+import HelloWorld from '../views/hello-world/HelloWorld.jsx';
+import Footer from "../layout/Footer.svelte";
+---
+
+<header>
+	<title>React Page</title>
+</header>
+
+<main class="flex flex-col justify-center items-center mt-20">
+    <HelloWorld client:visible text="React Page" />
+
+    <a href="/" title="Go Back" class="text-blue-500 mt-16">Go Back</a>
+</main>
+
+<footer class="absolute bottom-0 w-full">
+	<Footer />
+</footer>
